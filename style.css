@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*height: 100vh;*/
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding-top:30px ;
+    padding-bottom: 40px;
+    height: 48px;
+    width: 120px;
+}
+
+.container__input{
+    display: flex;
+    justify-content:space-around
+    
+}
+
+
+#input__texto {
+    border-style: none ;
+    font-size: 16px;
+    outline: none;
+    text-decoration: none;
+    
+}
+#input__texto::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: start;
+}
+#output {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    
+    
+    
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.imagem{
+   
+}
+h2{
+    padding: 10px;
+}
+span{
+    text-align: center;
+    padding: 10px;
+}
+.copiar {
+    display: none;
+    width: 328;
+    margin-top: 768px;
+    height: 67px;
+    border-radius: 6px;
+    background-color: #0A3871;
+    color: white;
+}
+
+p {
+   
+    color: gray;
+    font-size: 18px; 
+}
+.container__btn{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-left: 20px;
+    margin-bottom:30px;
+    margin-top: -70px;
+    
+}
+.btn__criptografar, .btn__descriptografar, .btn__copiar {
+    background-color: white;
+    color: #0A3871;
+    width: 328px;
+    height: 67px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn__criptografar:hover, .btn__descriptografar:hover, .btn__copiar:hover{
+    background-color: #0A3871;
+    color: white;
+}
+#input__texto{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.btn__copiar{
+    margin-top:350px;
+   margin-left: 40px;
+    
+    
+}
+.rodape {
+    text-align: center;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.644);
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+    p{
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    .container__input{
+        flex-direction: column;
+        
+    
+        
+    }
+    .buttons{
+        position: relative;
+        top: -500px;
+        
+    }
+        
+    
+    .btn__criptografar, .btn__descriptografar, .btn__copiar {
+        
+        width: 260px;
+        height: 57px;
+        
+        font-size: 14px;
+    }
+
+    .textaux{
+        padding: 50px;
+        margin-bottom: 20px;
+        margin-top: 80px;
+        
+    }
+    .btn__copiar{
+        margin: 40px 30px 50px 170px;
+    }
+    .imagem {
+        display: none;
+        
+    }
+    #output{
+        width: 600px;
+        margin-top: 100px;
+        height: 400px;
+    }
+    
+
+    
+        
+    h2{
+        margin-top: 30px;
+        text-align: center;
+    }
+    span{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    body{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .container__input{
+        gap: 100px;
+    }
+    #input__texto{
+        width: 300px;
+        height: 300px;
+    }
+    #input__texto::placeholder{
+        font-size: 28px;
+    }
+    .container__btn {
+        flex-direction: column;
+        
+    }
+    .btn__criptografar, .btn__descriptografar, .btn__copiar{
+        border-radius: 20px;
+        
+        
+    }
+    .btn__criptografar, .btn__descriptografar{
+        position: relative;
+        top: 20px;
+        margin-left: 40px;
+    }
+    .textaux {
+        margin-left: 30px;
+        width: 300px;
+        position: relative;
+        margin-bottom: 0;
+        
+    }
+    .btn__copiar{
+        margin-left: 50px;
+    }
+    h2{
+        width: 300px;
+        margin-top: 100px;
+        margin-left: 30px;
+        font-size: 24px;
+        align-items: center;
+    }
+    span {
+        margin-left: 30px;
+        margin-top: 10px;
+        width: 300px;
+
+    }
+    #output{
+        
+        
+        
+        
+    }
+    .rodape {
+    margin-top: 0;
+    padding: 0;    }
+}
